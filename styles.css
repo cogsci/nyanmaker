@@ -2,6 +2,12 @@
 Layout, size, color
 */
 
+.content {
+  width: 400px;
+  margin: auto;
+  margin-top: 35%;
+}
+
 .col {
   float: left;
 }
@@ -33,6 +39,11 @@ Layout, size, color
 }
 .row-6 {
   background-color: #6633FF;
+}
+
+img {
+  margin-top: -20px;
+  margin-left: -66px;
 }
 
 /*
