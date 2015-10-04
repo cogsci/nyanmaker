@@ -1,0 +1,79 @@
+/*
+Layout, size, color
+*/
+
+.col {
+  float: left;
+}
+
+.wide div[class^="row"],[class*=" row"] {
+  width: 40px;
+  height: 17px;
+}
+
+.thin div[class^="row"],[class*=" row"]{
+  width: 6px;
+  height: 17px;
+}
+
+.row-1 {
+  background-color: #FF0000;
+}
+.row-2 {
+  background-color: #FF9900;
+}
+.row-3 {
+  background-color: #FFFF00;
+}
+.row-4 {
+  background-color: #33FF00;
+}
+.row-5 {
+  background-color: #0099FF;
+}
+.row-6 {
+  background-color: #6633FF;
+}
+
+/*
+Positon
+*/
+
+/* Odd Wide Columns */
+.col:nth-of-type(4n+1) {
+  margin-top: 0px;
+  animation-name: wave;
+  animation-duration: .15s;
+  animation-timing-function: step-start;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+/* Even Wide Columns */
+.col:nth-of-type(4n+3) {
+  margin-top: 5px;
+  animation-name: wave;
+  animation-duration: .15s;
+  animation-timing-function: step-start;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+/* Narrows Columns*/
+.col:nth-of-type(4n+2) {
+  margin-top: 5px;
+}
+
+/*
+Animation
+*/
+
+@keyframes wave {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 5px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
