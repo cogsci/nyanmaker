@@ -14,10 +14,6 @@ html {
 .content {
   width: 400px;
   margin-top: 20%;
-  margin-left: -1000px;
-  /*margin-right: auto;*/
-  /*animation-name: intro;
-  animation-duration: 2s;*/
 }
 
 .col {
@@ -94,13 +90,3 @@ Animation
     transform: translateY(5px);
   }
 }
-
-/*@keyframes intro {
-  0% {
-    opacity: .25;
-    margin-left: -100px;
-  }
-  100% {
-    opacity: 1;
-  }
-}*/
