@@ -10,10 +10,6 @@ html {
   background-size: cover;
 }
 
-body {
-  /*background-color: #003366;*/
-}
-
 .content {
   width: 400px;
   margin-top: 20%;
@@ -58,6 +54,7 @@ body {
 
 /* Place cat on rainbow */
 img {
+  position: relative;
   margin-top: -20px;
   margin-left: -66px;
 }
