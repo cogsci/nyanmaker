@@ -1,23 +1,28 @@
+
 // makes cat appear from the left
 function appear() {
   $('.cat').velocity({translateX: '-1000px'}, {duration: 1, display: 'hidden'});
   $('.cat').velocity({translateX: '100px'}, {duration: 500, display: 'visible'});
 }
+
 $(function() {
+  // audio
+  var nyansong = document.getElementById('nyansong');
+
   appear();
 
   // controls audio playback
   Mousetrap.bind('a', function() {
-    document.getElementById('nyansong').play();
+    nyansong.play();
   });
   Mousetrap.bind('m', function() {
-    document.getElementById('nyansong').pause();
+    nyansong.pause();
   });
   Mousetrap.bind('up', function() {
-    document.getElementById('nyansong').volume+=0.1;
+    nyansong.volume+=0.1;
   });
   Mousetrap.bind('down', function() {
-    document.getElementById('nyansong').volume-=0.1;
+    nyansong.volume-=0.1;
   });
 
   // displays number of trips cat has taken
