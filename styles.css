@@ -3,6 +3,7 @@ Layout, size, color
 */
 
 html {
+  overflow: hidden;
   background: url(images/space_horizon.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
