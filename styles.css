@@ -11,6 +11,14 @@ html {
   background-size: cover;
 }
 
+p {
+  color: white;
+  font-family: courier;
+  position: relative;
+  left: 100px;
+  opacity: 0;
+}
+
 .cat {
   width: 400px;
   margin-top: 20%;
